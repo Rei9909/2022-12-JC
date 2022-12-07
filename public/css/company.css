@@ -1,0 +1,631 @@
+.main {
+  font-family: 'Shippori Mincho', serif;
+  width: 100%;
+  background-color: #FBFBFB;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.main__line {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/*-------------------------------共通事項------------------------------*/
+
+.ttl {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.ttl__main {
+  font-size: 60px;
+}
+
+.ttl__sub {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.move {
+  margin: 150px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .ttl__main {
+    font-size: 50px;
+
+  }
+
+  .ttl__sub {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+/*-------------------------------opacity------------------------------*/
+
+/*--opacity-under--*/
+.opacity-company {
+  position: absolute;
+  right: -13%;
+  bottom: 0;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  font-weight: bold;
+}
+
+
+/*--opacity-90度回転・右寄せ--*/
+.opacity__histry {
+  position: absolute;
+  top: 150px;
+  right: -30%;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+
+/*--opacity-top--*/
+.opacity-message {
+  position: absolute;
+  right: -13%;
+  top: 500px;
+  ;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  font-weight: bold;
+}
+
+.opacity-outline {
+  position: absolute;
+  right: -13%;
+  top: 750px;
+  ;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  font-weight: bold;
+}
+
+.opacity-access {
+  position: absolute;
+  right: -13%;
+  top: 0;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width:768px) {
+  .opacity-company {
+    font-size: 90px;
+    top: 490px;
+    right: -20%;
+  }
+
+  .opacity-message {
+    font-size: 90px;
+    top: 800px;
+    right: -20%;
+  }
+
+  .opacity-outline {
+    font-size: 90px;
+    top: 1150px;
+    right: -20%;
+  }
+
+  .opacity__histry {
+    top: 150px;
+    right: -50%;
+    font-size: 120px;
+  }
+
+  .opacity-access {
+    right: -13%;
+    top: 700px;
+    font-size: 90px;
+  }
+}
+
+/*-------------------------------個別事項------------------------------*/
+
+
+
+
+
+
+/*-------------------------------メインビジュアル------------------------------*/
+
+
+
+
+
+/*-------------------------------コンテンツcompany------------------------------*/
+.company {
+  padding-top: 170px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.company__contens {
+  margin-left: 8%;
+}
+
+.company__contens-catchcopy {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 50px 0;
+}
+
+@media screen and (max-width:768px) {
+  .company {
+    padding-top: 100px;
+  }
+
+  .company__contents {
+    padding-top: 30px;
+  }
+
+  .company__contens-catchcopy {
+    font-size: 22px;
+    padding: 70px 0;
+  }
+}
+
+/*-------------------------------コンテンツmessage------------------------------*/
+
+.message {
+  position: relative;
+  margin-top: 400px;
+}
+
+.message__flexcontents {
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message__flexcontents-message {
+  width: 60%;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.president-name {
+  display: block;
+  margin-top: 10px;
+  text-align: end;
+  font-size: 20px;
+}
+
+.message__flexcontents-img {
+  width: 30%;
+}
+
+.president-photo {
+  border: solid 1px #c4c4c4;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width:768px) {
+  .message__flexcontents {
+    display: block;
+  }
+
+  .message__flexcontents-message {
+    width: 100%;
+  }
+
+  .message__flexcontents-img {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+
+
+/*-------------------------------コンテンツoutline------------------------------*/
+
+
+.outline {
+  position: relative;
+  margin: 300px 0;
+}
+
+.outline__table {
+  margin-left: 8%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 0;
+  border: solid 2px #FBFBFB;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+th {
+  width: 30%;
+  background-color: rgb(121, 186, 212);
+  color: #FBFBFB;
+}
+
+td {
+  background-color: #f3f2f2;
+}
+
+span {
+  display: inline-block;
+}
+
+@media screen and (max-width:768px) {
+
+  th,
+  td {
+    display: block;
+    text-align: left;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  th {
+    width: auto;
+  }
+}
+
+
+
+
+
+/*-------------------------------コンテンツhistory------------------------------*/
+
+
+.history__ttl {
+  position: relative;
+}
+
+.histry__chart {
+  margin-left: 8%;
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.histry__chart-day,
+.histry__chart-text {
+  font-size: 16px;
+  line-height: 90px;
+}
+
+.histry__chart-day {
+  width: 120px;
+  border-right: solid 2px rgb(121, 186, 212);
+}
+
+.histry__chart-text {
+  width: 60%;
+  padding-left: 10%;
+  font-weight: bold;
+}
+
+.histry__chart-text::before {
+  content: '\2022';
+  font-size: 40px;
+  position: absolute;
+  left: 112px;
+  color: rgb(121, 186, 212);
+}
+
+div.accese__contents-address p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:768px) {
+  li {
+    display: block;
+  }
+
+  .histry__chart-text::before {
+    display: none;
+  }
+
+  .histry__chart-day {
+    border-right: none;
+    padding-left: 8%;
+  }
+
+  .histry__chart-text {
+    width: 100%;
+    padding-left: 15%;
+    padding-bottom: 30PX;
+  }
+
+  .histry__chart-day,
+  .histry__chart-text {
+    line-height: 50px;
+    border-left: solid 2px rgb(121, 186, 212);
+  }
+
+  .histry__chart-text {
+    line-height: 40px;
+  }
+
+  .histry__chart-day::after {
+    content: '\2022';
+    font-size: 40px;
+    position: absolute;
+    left: -8px;
+    color: rgb(121, 186, 212);
+  }
+}
+
+
+
+/*-------------------------------コンテンツaccess------------------------------*/
+
+
+.access {
+  position: relative;
+  margin: 300px 0;
+}
+
+.accese__contents {
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+iframe {
+  width: 55%;
+  border: solid 1px #282828;
+  border-radius: 20px;
+}
+
+.accese__contents-address {
+  position: relative;
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.accese__contents-address::before {
+  content: '';
+  position: absolute;
+  left: -20%;
+  top: 0;
+  display: inline-block;
+  width: 110%;
+  height: 1px;
+  background-color: black;
+}
+
+.accese__contents-address::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 230px;
+  background-color: black;
+  top: -30px;
+  left: -10%;
+}
+
+
+div.accese__contents-address p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:768px) {
+  .access {
+    margin: 200px 0;
+  }
+
+  .accese__contents {
+    display: block;
+    margin-left: 8%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .accese__contents-address {
+    margin-left: 10%;
+    margin-top: 70px;
+  }
+}
+
+
+
+/*----コンテンツinfo-----*/
+
+.info {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info__ricruit,
+.info__Contact {
+  text-decoration: none;
+  color: white;
+  width: 50%;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.info__ricruit {
+  background-image: url(../images/service.images/recruit.jpg);
+  background-position-x: 10%;
+  background-position-y: 10%;
+}
+
+
+.info__Contact {
+  background-image: url(../images/service.images/contact.jpg);
+  background-position-x: 40%;
+}
+
+.info__ricruit-catchcopy {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*画像をホバーしたらopacity*/
+.info__ricruit {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.info__ricruit:hover {
+  opacity: .8;
+}
+
+.info__Contact {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.info__Contact:hover {
+  opacity: .8;
+}
+
+/*-------------------------------スクロールscrolldown------------------------------*/
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  /*全体の高さ*/
+  height: 50px;
+  left: 50%;
+  top: 900px;
+  font-size: 16px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+  /*描画位置*/
+  position: absolute;
+  left: -31px;
+  top: -20px;
+  /*テキストの形状*/
+  color: #282828;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width:1600px) {
+  .scrolldown1 span {
+    left: -24px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .scrolldown1 {
+    height: 50px;
+    top: 900px;
+  }
+
+  .scrolldown1 span {
+    left: -18px;
+    top: -16px;
+    font-size: 0.7rem;
+  }
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  /*線の形状*/
+  width: 1px;
+  height: 30px;
+  background: #000;
+  /*線の動き1.5秒かけて動く。永遠にループ*/
+  animation: pathmove 1.5s ease-in-out infinite;
+  opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}

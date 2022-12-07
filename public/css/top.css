@@ -1,0 +1,149 @@
+.main {
+  font-family: 'Shippori Mincho', serif;
+  width: 100%;
+  background-color: #FBFBFB;
+  overflow: hidden;
+}
+
+
+
+/*-------------------------------共通事項------------------------------*/
+
+.ttl {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.ttl__main {
+  font-size: 60px;
+}
+
+.ttl__sub {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.text__span {
+  color: red;
+}
+
+
+/*-------------------------------個別事項------------------------------*/
+
+
+/*-- メインビジュアル --*/
+.contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*-- ページ進捗 ※ページ進むとCSS変わるところ --*/
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.progress__border {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: table;
+}
+
+.progress__line {
+  width: 50px;
+  height: 2px;
+  background-color: #e9e9e9;
+}
+
+.progress__box {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progress__number {
+  font-size: 10px;
+}
+.progress__text {
+  font-size: 14px;
+}
+
+.progress__border:nth-child(1) {
+  background-color: rgb(4, 151, 205);
+  color: #FBFBFB;
+  border: solid 3px rgb(4, 151, 205);
+}
+
+.progress__border:not(:nth-child(1)) {
+  color: #c4c4c4;
+  border: solid 3px #e9e9e9;
+}
+
+
+
+/*-- 本文テキスト部分 --*/
+.contact .text {
+  text-align: center;
+}
+
+
+
+/*-- フォーム --*/
+
+.form-inner {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.form-item {
+  margin-top: 50px;
+}
+
+.item-field, 
+.content-field {
+  font-size: 12px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.item-field {
+  padding-bottom: 10px;
+}
+
+.item-field,
+.content-field {
+  width: 100%;
+}
+
+button {
+  border: solid 2px rgb(241, 241, 241);
+  background-color: #FBFBFB;
+  display: block;
+  margin: 30px auto;
+  padding: 5px 0 5px 60px;
+  cursor: pointer;
+}
+
+button::after {
+  content: '➔';
+  font-weight: bold;
+  color: rgb(4, 151, 205);
+  padding-left: 40px;
+  margin-right: 10px;
+}
+
+.required {
+  color: red;
+  font-size: 12px;
+}

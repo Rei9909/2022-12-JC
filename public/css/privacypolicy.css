@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+/* CSS Document */
+.main {
+  font-family: 'Shippori Mincho', serif;
+  width: 100%;
+  background-color: #FBFBFB;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.main__line {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 20px;
+}
+
+.ttl {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.ttl__main {
+  font-size: 60px;
+}
+
+.ttl__sub {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+ol li {
+  margin: 80px auto;
+}
+
+.numbertext {
+  line-height: 25px;
+}
+
+@media screen and (max-width:768px) {
+  .main__line {
+    width: 75%;
+  }
+
+  .ttl__main {
+    font-size: 47px;
+  }
+
+  .ttl__sub {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .numbertext {
+    font-size: 14px;
+  }
+}
+
+
+.privacypolicy {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 140px;
+  padding-top: 170px;
+}
+
+/*--opacity-右寄せ下--*/
+.opacity-privacy {
+  font-weight: bold;
+  position: absolute;
+  right: -13%;
+  bottom: -35%;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+}
+
+.intro {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 160px;
+}
+
+@media screen and (max-width:768px) {
+  .opacity-privacy {
+    top: 400px;
+    font-size: 100px;
+    right: -30%;
+    opacity: 0.2;
+  }
+
+  .privacypolicy {
+    padding-bottom: 200px;
+  }
+}
+
+/*-----------------------Contact-------------------------*/
+.Contact {
+  width: 100%;
+  margin: 300px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 330px;
+  padding: 0px 3rem;
+  box-sizing: border-box;
+
+}
+
+.Contact__ttl-main {
+  font-size: 80px;
+  /*------ホバーアンダーライン設定------*/
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.Contact__ttl-main::after {
+  background-color: #282828;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1.5px;
+  position: absolute;
+  transition: .7s all;
+  width: 0;
+  left: 25%;
+}
+
+.Contact__ttl-main:hover::after {
+  width: 50%;
+}
+
+/*-----------↑ここまで↑----------------*/
+
+
+.Contact__ttl-sub {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #3F3F3F;
+}
+
+.Contact__behind {
+  text-decoration: none;
+  color: #282828;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.Contact__behind::before {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #eee;
+  font-size: 300px;
+  content: 'Contact';
+  z-index: -1;
+  opacity: 0.3;
+  font-weight: bold;
+}
+
+/*-------------Contactレスポンシブ------------------*/
+@media screen and (max-width:768px) {
+  .Contact__ttl-main {
+    font-size: 50px;
+  }
+
+  .Contact__ttl-main::after {
+    left: 5%;
+  }
+
+  .Contact__ttl-main:hover::after {
+    width: 90%;
+  }
+
+  .Contact__ttl-sub {
+    font-size: 15px;
+  }
+
+  .Contact__behind::before {
+    top: -50px;
+    font-size: 100px;
+  }
+}
+
+/*========= ページトップのためのCSS ===============*/
+/*リンクの形状*/
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  border: 0.5px solid #282828;
+  border-radius: 3px;
+  width: 60px;
+  height: 60px;
+  color: #282828;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+#page-top a:hover {
+  background: #98D6F1;
+  opacity: 0.8;
+  color: #000000;
+  transition: 1.0s;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove {
+  animation: UpAnime 1s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove {
+  animation: DownAnime 1s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
+/*----------トップページスクロールのレスポンシブ-------------*/
+@media screen and (max-width:768px) {
+  #page-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fbfbfb;
+    border: 0.3px solid #282828;
+    border-radius: 0.5px;
+    width: 40px;
+    height: 40px;
+    color: #282828;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.5rem;
+    transition: all 0.3s;
+  }
+
+  #page-top a:hover {
+    background: #98D6F1;
+    opacity: 0.8;
+    color: #000000;
+    transition: 1s;
+  }
+
+  /*リンクを右下に固定*/
+  #page-top {
+    position: fixed;
+    left: 10px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  /*　上に上がる動き　*/
+
+  #page-top.UpMove {
+    animation: UpAnime 1s forwards;
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove {
+  animation: DownAnime 1s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}

@@ -1,0 +1,839 @@
+.index {
+  font-family: 'Shippori Mincho', serif;
+}
+
+
+.index {
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+/*-----------------------メインビジュアル-------------------------*/
+.top {
+  width: 100%;
+  margin-top: 250px;
+}
+
+.top__ttl {
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
+
+.top__ttl-text {
+  font-size: 25px;
+  padding-bottom: 7px;
+}
+
+.top__ttl-name {
+  font-size: 65px;
+  margin-top: 10px;
+}
+
+.top__img {
+  position: relative;
+  top: -30px;
+  z-index: -2;
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+@media screen and (max-width:768px) {
+  .top {
+    margin-top: 250px;
+  }
+
+  .top__img {
+    height: 440px;
+    top: -22px;
+  }
+
+  .top__ttl-text {
+    font-size: 16px;
+    padding-bottom: 3px;
+  }
+
+  .top__ttl-name {
+    font-size: 43px;
+    margin-top: 10px;
+  }
+}
+
+/*-----------------------コンテンツjapancreate-------------------------*/
+.JapanCreate {
+  width: 80%;
+  margin: 400px auto 200px;
+}
+
+@media screen and (max-width:1400px) {
+  .JapanCreate {
+    margin: 300px auto 200px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .JapanCreate {
+    margin: 200px auto 200px;
+  }
+}
+
+.JapanCreate__ttl-main {
+  font-size: 60px;
+}
+
+.JapanCreate__ttl-sub {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.JapanCreate__contents {
+  margin-top: 80px;
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+}
+
+.JapanCreate__contents-text {
+  font-size: 16px;
+  line-height: 35px;
+  margin: 0 8%;
+}
+
+@media screen and (max-width:768px) {
+  .JapanCreate__ttl-main {
+    font-size: 40px;
+  }
+
+  .JapanCreate__ttl-sub {
+    margin-top: 13px;
+    font-size: 14px;
+  }
+
+  .JapanCreate__contents {
+    margin-top: 80px;
+  }
+
+  .JapanCreate__contents-text {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 1% 0 8%;
+  }
+}
+
+/*-----------------------コンテンツService-------------------------*/
+.Service {
+  width: 100%;
+  z-index: -1;
+  border-top: solid .5px #c4c4c4;
+  border-bottom: solid .5px #c4c4c4;
+}
+
+.Service__ttl {
+  padding-top: 150px;
+}
+
+.Service__ttl,
+.Service__contents {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Service__ttl-main {
+  font-size: 60px;
+}
+
+.Service__ttl-sub {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Service__contents {
+  margin-top: 80px;
+  margin-left: 11%;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+}
+
+.Service__contents-text {
+  margin: 0 8%;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+@media screen and (max-width:768px) {
+  .Service__ttl-main {
+    font-size: 40px;
+  }
+
+  .Service__ttl-sub {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .Service__contents-text {
+    margin: 0 1% 0 8%;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+/*--コンテンツServiceの写真--*/
+.Service__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+.Service__box-contents {
+  width: 20%;
+  border: solid 0.3px #dedede;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.box__contents {
+  width: 100%;
+}
+
+.box__contents-ttl {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.box__contents-text {
+  font-size: 13px;
+  margin: 0 15px;
+  margin-bottom: 20px;
+  line-height: 18px;
+}
+
+@media screen and (max-width:768px) {
+  .Service__box-contents {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .Service__box {
+    display: block;
+    margin-left: 10%;
+  }
+}
+
+/*-----------------------コンテンツCompany-------------------------*/
+.Company {
+  width: 100%;
+  border-bottom: solid .5px #c4c4c4;
+}
+
+.ttl {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.ttl-main {
+  font-size: 60px;
+}
+
+.ttl-sub {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Company__back {
+  margin-top: 50px;
+  background-image: url(../images/index.images/company.jpg);
+  width: 100%;
+  height: 430px;
+  padding: 50px 0;
+  background-size: cover;
+  z-index: -2;
+}
+
+.Company__back-contents {
+  margin-left: 47%;
+  display: inline-block;
+  position: relative;
+}
+
+.Company__back-contents-text {
+  margin: 50px 15%;
+  font-size: 16px;
+  line-height: 30px;
+  display: block;
+  z-index: -1;
+}
+
+.back__contents-opacitytext {
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #fbfbfb;
+  opacity: 0.8;
+  right: 0;
+  bottom: 0;
+  top: 396px;
+  z-index: 0;
+  font-weight: bold;
+}
+
+.Company__contents-text-hidden {
+  opacity: 0;
+}
+
+@media screen and (max-width:768px) {
+  .ttl-main {
+    font-size: 40px;
+  }
+
+  .ttl-sub {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .Company__back-contents-text {
+    display: none;
+  }
+
+  .Company__contents-text-hidden {
+    width: 80%;
+    opacity: 1.0;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 40px 13% 0 14%;
+  }
+
+  .Company__back {
+    height: 250px;
+  }
+}
+
+/*-----------------------コンテンツRecruit-------------------------*/
+.Recruit__res {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+
+  .Recruit__back__contents {
+    display: none;
+  }
+
+  .Recruit__res {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 8%;
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .back__contents-opacitytext {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 50px;
+    color: #fbfbfb;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+    top: 197px;
+    font-weight: bold;
+  }
+}
+
+
+.Recruit {
+  border-bottom: solid .5px #c4c4c4;
+}
+
+.Recruit__back {
+  background-image: url(../images/index.images/recruit-3.jpeg);
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  background-size: cover;
+  margin-top: 50px;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+}
+
+.Recruit__back__contents {
+  margin-top: 300px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Recruit__back-contents-text {
+  width: 45%;
+  margin: 0 0 140px auto;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/*-----------------------コンテンツNews-------------------------*/
+.News {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.News__ttl {
+  width: 55%;
+}
+
+.News__list {
+  width: 100%;
+  border-top: solid 3px black;
+  font-size: 16px;
+  line-height: 70px;
+  margin-top: 20px;
+}
+
+
+.News__list-item {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.News__list-item:not(:nth-child(4)) {
+  border-bottom: solid 1px black;
+}
+
+.News__list-day {
+  width: 35%;
+}
+
+.News__img {
+  width: 40%;
+}
+
+.News__img-img {
+  width: 100%;
+  height: auto;
+}
+
+.News__contents {
+
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width:768px) {
+  .News {
+    display: block;
+  }
+
+  .News__list {
+    border-top: solid 2px black;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .News__ttl {
+    width: 100%;
+    font-size: 20px;
+    border-bottom: solid 2px black;
+  }
+
+  .News__img {
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.News__img {
+  opacity: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.News__img:hover img {
+  opacity: .5;
+}
+
+/*-----------------------Contact-------------------------*/
+.Contact {
+  width: 100%;
+  margin: 300px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 330px;
+  padding: 0px 3rem;
+  box-sizing: border-box;
+
+}
+
+.Contact__ttl-main {
+  font-size: 80px;
+  /*------ホバーアンダーライン設定------*/
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.Contact__ttl-main::after {
+  background-color: #282828;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1.5px;
+  position: absolute;
+  transition: .7s all;
+  width: 0;
+  left: 25%;
+}
+
+.Contact__ttl-main:hover::after {
+  width: 50%;
+}
+
+/*-----------↑ここまで↑----------------*/
+
+
+.Contact__ttl-sub {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #3F3F3F;
+}
+
+.Contact__behind {
+  text-decoration: none;
+  color: #282828;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.Contact__behind::before {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #eee;
+  font-size: 300px;
+  content: 'Contact';
+  z-index: -1;
+  opacity: 0.3;
+  font-weight: bold;
+}
+
+/*-------------Contactレスポンシブ------------------*/
+@media screen and (max-width:768px) {
+  .Contact__ttl-main {
+    font-size: 50px;
+  }
+
+  .Contact__ttl-main::after {
+    left: 5%;
+  }
+
+  .Contact__ttl-main:hover::after {
+    width: 90%;
+  }
+
+  .Contact__ttl-sub {
+    font-size: 15px;
+  }
+
+  .Contact__behind::before {
+    top: -50px;
+    font-size: 100px;
+  }
+}
+
+/*-----------------------Opacityテキスト---------------------------*/
+
+.JapanCreate__contents-opacitytext {
+  font-weight: bold;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  right: -15%;
+  bottom: -100px;
+}
+
+.Service__contents-opacitytext {
+  font-weight: bold;
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.15;
+  right: -15%;
+  bottom: -100px;
+
+}
+
+@media screen and (max-width:768px) {
+
+  .JapanCreate__contents-opacitytext,
+  .Service__contents-opacitytext {
+    font-size: 120px;
+    bottom: -70px;
+    right: -25%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------スクロールscrolldown------------------------------*/
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  /*全体の高さ*/
+  height: 50px;
+  left: 50%;
+  top: 1000px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+  /*描画位置*/
+  position: absolute;
+  left: -31px;
+  top: -20px;
+  /*テキストの形状*/
+  color: #282828;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width:1600px) {
+  .scrolldown1 span {
+    left: -24px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .scrolldown1 {
+    height: 50px;
+    top: 830px;
+  }
+
+  .scrolldown1 span {
+    left: -18px;
+    top: -16px;
+    font-size: 0.7rem;
+  }
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  /*線の形状*/
+  width: 1px;
+  height: 30px;
+  background: #000;
+  /*線の動き1.5秒かけて動く。永遠にループ*/
+  animation: pathmove 1.5s ease-in-out infinite;
+  opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+/*-----------------------画像の拡大-------------------------*/
+
+.zoomIn img {
+  transform: scale(1);
+  transition: .5s ease-in-out;
+  /*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.zoomIn a:hover img {
+  /*hoverした時の変化*/
+  transform: scale(1.1);
+  /*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/*　画像のマスク　*/
+
+.mask {
+  display: block;
+  line-height: 0;
+  /*行の高さを0にする*/
+  overflow: hidden;
+  /*拡大してはみ出る要素を隠す*/
+}
+
+.zoomIn a:hover {
+  cursor: default;
+}
+
+/*-----------------------------ViewMoreボタン----------------------------------------*/
+/*== 矢印の線がループして伸縮 */
+
+@media screen and (max-width:768px) {
+  .viewmore_btn {
+    margin: 80px;
+    font-size: 18px;
+  }
+}
+
+.more1 a:hover {
+  color: #00BAFF;
+  transition: 1s;
+}
+
+/*== 矢印の線がループして伸縮 */
+.btn {
+  text-align: center;
+}
+
+.viewmore_btn {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*リンクの形状*/
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  color: #282828;
+  margin: 140px 0;
+  font-size: 25px;
+}
+
+/*線の設定*/
+.viewmore_btn::before {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: -7px;
+  /*線の形状*/
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
+
+/*矢印の設定*/
+.viewmore_btn::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: -11px;
+  /*矢印の形状*/
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  transform: rotate(45deg);
+}
+
+/*線と矢印を繰り返しアニメーション*/
+.viewmore_btn::before {
+  animation: arrowlong01 2s ease infinite;
+}
+
+.viewmore_btn::after {
+  animation: arrowlong02 2s ease infinite;
+}
+
+@keyframes arrowlong01 {
+  0% {
+    width: 0;
+    opacity: 0
+  }
+
+  20% {
+    width: 0;
+    opacity: 1
+  }
+
+  80% {
+    width: 105%;
+    opacity: 1
+  }
+
+  100% {
+    width: 105%;
+    opacity: 0
+  }
+}
+
+@keyframes arrowlong02 {
+  0% {
+    left: 0;
+    opacity: 0
+  }
+
+  20% {
+    left: 0;
+    opacity: 1
+  }
+
+  80% {
+    left: 103%;
+    opacity: 1
+  }
+
+  100% {
+    left: 103%;
+    opacity: 0
+  }
+}

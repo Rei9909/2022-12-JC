@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+.main {
+  font-family: 'Shippori Mincho', serif;
+  width: 100%;
+  background-color: #FBFBFB;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.main__line {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*-------------------------------共通事項------------------------------*/
+
+.ttl {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.ttl__main {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.ttl__sub {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.text__catchcopy {
+  font-size: 32px;
+  line-height: 40px;
+  padding-top: 30px;
+}
+
+/*--コンテンツ（タイトルから８％寄せ）--*/
+.servicedetail__contents,
+.image__contents {
+  margin-left: 8%;
+}
+
+@media screen and (max-width:768px) {
+  .ttl__main {
+    font-size: 50px;
+
+  }
+
+  .ttl__sub {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+/*--------------------------------------opacity-右寄せ中央-------------------------------------------*/
+.opacity-business {
+  font-weight: bold;
+  position: absolute;
+  right: -20%;
+  top: 480px;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 180px;
+  color: #CFCFCF;
+  opacity: 0.13;
+}
+
+@media screen and (max-width:768px) {
+  .opacity-business {
+    right: -40%;
+    top: 700px;
+    font-size: 90px;
+  }
+}
+
+
+
+/*--------------------------------------コンテンツbusiness-------------------------------------------*/
+.servicedetail {
+  width: 80%;
+  margin: 0px auto;
+  position: relative;
+  padding-bottom: 400px;
+  padding-top: 170px;
+}
+
+.text__catchcopy {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width:768px) {
+  .servicedetail {
+    padding-top: 100px;
+  }
+
+  .text__catchcopy {
+    font-size: 24px;
+    margin-top: 70px;
+  }
+
+  .service__contents>.text {
+    padding-top: 30px;
+  }
+}
+
+
+
+/*-----------------------メインコンテンツ-----------------------*/
+.flex__item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.business {
+  padding: 0px 20px;
+}
+
+.card__content {
+  padding: 30px 20px;
+}
+
+.card__text {
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media screen and (max-width:768px) {
+  .card__content img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .card__content {
+    text-align: center;
+  }
+}
+
+/*-----------------------Contact-------------------------*/
+.Contact {
+  width: 100%;
+  margin: 300px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 330px;
+  padding: 0px 3rem;
+  box-sizing: border-box;
+
+}
+
+.Contact__ttl-main {
+  font-size: 80px;
+  /*------ホバーアンダーライン設定------*/
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.Contact__ttl-main::after {
+  background-color: #282828;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1.5px;
+  position: absolute;
+  transition: .7s all;
+  width: 0;
+  left: 25%;
+}
+
+.Contact__ttl-main:hover::after {
+  width: 50%;
+}
+
+/*-----------↑ここまで↑----------------*/
+
+
+.Contact__ttl-sub {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #3F3F3F;
+}
+
+.Contact__behind {
+  text-decoration: none;
+  color: #282828;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.Contact__behind::before {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #eee;
+  font-size: 300px;
+  content: 'Contact';
+  z-index: -1;
+  opacity: 0.3;
+  font-weight: bold;
+}
+
+/*-------------Contactレスポンシブ------------------*/
+@media screen and (max-width:768px) {
+  .Contact__ttl-main {
+    font-size: 50px;
+  }
+
+  .Contact__ttl-main::after {
+    left: 5%;
+  }
+
+  .Contact__ttl-main:hover::after {
+    width: 90%;
+  }
+
+  .Contact__ttl-sub {
+    font-size: 15px;
+  }
+
+  .Contact__behind::before {
+    top: -50px;
+    font-size: 100px;
+  }
+}
